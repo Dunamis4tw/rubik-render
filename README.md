@@ -2,10 +2,7 @@
 
 Rubik-Render is a Go-based API service that generates SVG images of Rubik's cubes based on a given configuration. The service allows users to customize the cube's size, view (isometric, flat, or unfolded), and color for each side. This tool supports cubes and cuboids of various dimensions.
 
-<img src="./examples/1.svg" width="128" height="128" />
-<img src="./examples/7.svg" width="128" height="128" />
-<img src="./examples/8.svg" width="128" height="128" />
-<img src="./examples/2.svg" width="128" height="128" />
+<img src="./examples/1.svg" width="128" height="128" /><img src="./examples/7.svg" width="128" height="128" /><img src="./examples/8.svg" width="128" height="128" /><img src="./examples/2.svg" width="128" height="128" />
 
 ## Features
 
