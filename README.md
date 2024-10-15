@@ -2,6 +2,11 @@
 
 Rubik-Render is a Go-based API service that generates SVG images of Rubik's cubes based on a given configuration. The service allows users to customize the cube's size, view (isometric, flat, or unfolded), and color for each side. This tool supports cubes and cuboids of various dimensions.
 
+<img src="./examples/1.svg" width="128" height="128" />
+<img src="./examples/7.svg" width="128" height="128" />
+<img src="./examples/8.svg" width="128" height="128" />
+<img src="./examples/2.svg" width="128" height="128" />
+
 ## Features
 
 - **Multiple views**: Generate the Rubik's cube in different views, including:
@@ -34,33 +39,49 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
 
   `GET` **`http://localhost:8080/cube/isometric/3x3x3/R-W-B-K`**
 
+  <details><summary>Click to view the SVG image</summary><img src="./examples/1.svg" width="400" height="400" /></details>
+
 - **Flat view of a 2x2 cube with yellow on the front, red on the left, blue on the top, orange on the right, and green on the bottom**:
 
-  `GET` **`http://localhost:8080/cube/flat/2x2/Y-R-B-O-G`**
+  `GET` **`http://localhost:8080/cube/flat/3x3/Y-R-B-O-G`**
+  
+  <details><summary>Click to view the SVG image</summary><img src="./examples/2.svg" width="400" height="400" /></details>
 
 - **Isometric view of a 3x3x3 cube with a "Chessboard" pattern, where opposite colors alternate**:
 
   `GET` **`http://localhost:8080/cube/isometric/3x3x3/ROROROROR-WYWYWYWYW-BGBGBGBGB`**
 
+  <details><summary>Click to view the SVG image</summary><img src="./examples/3.svg" width="400" height="400" /></details>
+
 - **Isometric view of a 3x3x3 cube with a black base and completely gray cells**:
 
   `GET` **`http://localhost:8080/cube/isometric/3x3x3/X`**
+
+  <details><summary>Click to view the SVG image</summary><img src="./examples/4.svg" width="400" height="400" /></details>
 
 - **Isometric view of an inverted 3x3x3 cube, where the white side is black, and the base is white**:
 
   `GET` **`http://localhost:8080/cube/isometric/3x3x3/R-K-B-W`**
 
+  <details><summary>Click to view the SVG image</summary><img src="./examples/5.svg" width="400" height="400" /></details>
+
 - **Isometric view of a void 3x3x3 cube, where the centers are missing**:
 
   `GET` **`http://localhost:8080/cube/isometric/3x3x3/RRRRTRRRR-WWWWTWWWW-BBBBTBBBB`**
+
+  <details><summary>Click to view the SVG image</summary><img src="./examples/6.svg" width="400" height="400" /></details>
 
 - **Isometric view of a 3x3x3 cube that shows an F2L situation solvable with the formula U R U' R'**:
 
   `GET` **`http://localhost:8080/cube/isometric/3x3x3/XXWRRXRRX-XXXXXXRRX-GGXXGGXGG`**
 
+  <details><summary>Click to view the SVG image</summary><img src="./examples/7.svg" width="400" height="400" /></details>
+
 - **Isometric view of a 2x3x2 cuboid known as the QiYi MofangGe 223 Cube**:
 
   `GET` **`http://localhost:8080/cube/isometric/2x3x2/G-W-R`**
+
+  <details><summary>Click to view the SVG image</summary><img src="./examples/8.svg" width="400" height="400" /></details>
 
 ### Color Notation
 
@@ -94,8 +115,9 @@ git clone https://github.com/Dunamis4tw/rubik-render.git
 cd rubik-render
 go mod tidy
 go run main.go
-The service will be available at http://localhost:8080.
 ```
+
+The service will be available at http://localhost:8080.
 
 ## License
 
