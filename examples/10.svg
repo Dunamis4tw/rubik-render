@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161 161"><rect id="base" width="155" height="155" rx="7.42" style="fill: #000000" x="3" y="3"/>
+	<g id="front">
+		<rect id="front-1x1" x="10" y="10" width="43" height="43" rx="6.21" style="fill: #565656"/>
+		<rect id="front-2x1" x="59" y="10" width="43" height="43" rx="6.21" style="fill: #565656"/>
+		<rect id="front-3x1" x="108" y="10" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="front-1x2" x="10" y="59" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="front-2x2" x="59" y="59" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="front-3x2" x="108" y="59" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="front-1x3" x="10" y="108" width="43" height="43" rx="6.21" style="fill: #565656"/>
+		<rect id="front-2x3" x="59" y="108" width="43" height="43" rx="6.21" style="fill: #565656"/>
+		<rect id="front-3x3" x="108" y="108" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+	</g>
+	<g id="left">
+		<rect id="left-1x1" x="0" y="10" width="6" height="43" rx="2.32" style="fill: #ffff00"/>
+		<rect id="left-1x2" x="0" y="59" width="6" height="43" rx="2.32" style="fill: #565656"/>
+		<rect id="left-1x3" x="0" y="108" width="6" height="43" rx="2.32" style="fill: #ffff00"/>
+	</g>
+	<g id="top">
+		<rect id="top-1x1" x="10" y="0" width="43" height="6" rx="2.32" style="fill: #565656"/>
+		<rect id="top-2x1" x="59" y="0" width="43" height="6" rx="2.32" style="fill: #ffff00"/>
+		<rect id="top-3x1" x="108" y="0" width="43" height="6" rx="2.32" style="fill: #565656"/>
+	</g>
+	<g id="right">
+		<rect id="right-1x1" x="155" y="10" width="6" height="43" rx="2.32" style="fill: #565656"/>
+		<rect id="right-1x2" x="155" y="59" width="6" height="43" rx="2.32" style="fill: #565656"/>
+		<rect id="right-1x3" x="155" y="108" width="6" height="43" rx="2.32" style="fill: #565656"/>
+	</g>
+	<g id="down">
+		<rect id="down-1x1" x="10" y="155" width="43" height="6" rx="2.32" style="fill: #565656"/>
+		<rect id="down-2x1" x="59" y="155" width="43" height="6" rx="2.32" style="fill: #ffff00"/>
+		<rect id="down-3x1" x="108" y="155" width="43" height="6" rx="2.32" style="fill: #565656"/>
+	</g>
+</svg>

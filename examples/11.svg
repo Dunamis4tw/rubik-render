@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 357"><rect id="base" width="351" height="351" rx="7.42" style="fill: #000000" x="3" y="3"/>
+	<g id="front">
+		<rect id="front-1x1" x="10" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-1x2" x="59" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-1x3" x="108" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-1x4" x="157" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-1x5" x="206" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-1x6" x="255" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-1x7" x="304" y="10" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-2x1" x="10" y="59" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-2x2" x="59" y="59" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-2x3" x="108" y="59" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-2x4" x="157" y="59" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-2x5" x="206" y="59" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-2x6" x="255" y="59" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-2x7" x="304" y="59" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-3x1" x="10" y="108" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-3x2" x="59" y="108" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-3x3" x="108" y="108" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-3x4" x="157" y="108" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="front-3x5" x="206" y="108" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="front-3x6" x="255" y="108" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-3x7" x="304" y="108" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-4x1" x="10" y="157" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-4x2" x="59" y="157" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-4x3" x="108" y="157" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-4x4" x="157" y="157" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-4x5" x="206" y="157" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-4x6" x="255" y="157" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-4x7" x="304" y="157" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-5x1" x="10" y="206" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-5x2" x="59" y="206" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-5x3" x="108" y="206" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-5x4" x="157" y="206" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-5x5" x="206" y="206" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-5x6" x="255" y="206" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-5x7" x="304" y="206" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-6x1" x="10" y="255" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-6x2" x="59" y="255" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-6x3" x="108" y="255" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-6x4" x="157" y="255" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-6x5" x="206" y="255" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="front-6x6" x="255" y="255" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-6x7" x="304" y="255" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x1" x="10" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x2" x="59" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x3" x="108" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x4" x="157" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x5" x="206" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x6" x="255" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="front-7x7" x="304" y="304" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+	</g>
+	<g id="left">
+		<rect id="left-1x1" x="0" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="left-2x1" x="49" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="left-3x1" x="98" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="left-4x1" x="147" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="left-5x1" x="196" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="left-6x1" x="245" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="left-7x1" x="294" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+	</g>
+	<g id="top">
+		<rect id="top-1x1" x="10" y="0" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="top-1x2" x="10" y="49" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="top-1x3" x="10" y="98" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="top-1x4" x="10" y="147" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="top-1x5" x="10" y="196" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="top-1x6" x="10" y="245" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="top-1x7" x="10" y="294" width="43" height="6" rx="2.32" style="fill: transparent"/>
+	</g>
+	<g id="right">
+		<rect id="right-1x1" x="351" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="right-2x1" x="400" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="right-3x1" x="449" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="right-4x1" x="498" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="right-5x1" x="547" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="right-6x1" x="596" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+		<rect id="right-7x1" x="645" y="10" width="6" height="43" rx="2.32" style="fill: transparent"/>
+	</g>
+	<g id="down">
+		<rect id="down-1x1" x="10" y="351" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="down-1x2" x="10" y="400" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="down-1x3" x="10" y="449" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="down-1x4" x="10" y="498" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="down-1x5" x="10" y="547" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="down-1x6" x="10" y="596" width="43" height="6" rx="2.32" style="fill: transparent"/>
+		<rect id="down-1x7" x="10" y="645" width="43" height="6" rx="2.32" style="fill: transparent"/>
+	</g>
+</svg>
