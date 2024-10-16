@@ -151,3 +151,7 @@ The service will be available at http://localhost:8080.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Inspiration
+
+This project was inspired by [Speedcubing.com.ua](https://speedcubing.com.ua), where I first saw the concept of visualizing Rubik's cubes. I decided to build upon this idea, adding more customization and functionality.
