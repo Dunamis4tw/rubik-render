@@ -69,11 +69,11 @@ func ParseFlatParams(pDimensions, pColors string) (FlatCube, error) {
 	}
 
 	// Парсинг цветов для каждой стороны
-	cube.Colors[Front] = stringToRuneGrid(getColorOrEmpty(0, "X"), dY, dX)
-	cube.Colors[Left] = stringToRuneGrid(getColorOrEmpty(1, "T"), dY, 1)
-	cube.Colors[Top] = stringToRuneGrid(getColorOrEmpty(2, "T"), 1, dX)
-	cube.Colors[Right] = stringToRuneGrid(getColorOrEmpty(3, "T"), dY, 1)
-	cube.Colors[Down] = stringToRuneGrid(getColorOrEmpty(4, "T"), 1, dX)
+	cube.Colors[Front] = stringToRuneGrid(getColorOrEmpty(0, "X"), dX, dY)
+	cube.Colors[Left] = stringToRuneGrid(getColorOrEmpty(1, "T"), 1, dY)
+	cube.Colors[Top] = stringToRuneGrid(getColorOrEmpty(2, "T"), dX, 1)
+	cube.Colors[Right] = stringToRuneGrid(getColorOrEmpty(3, "T"), 1, dY)
+	cube.Colors[Down] = stringToRuneGrid(getColorOrEmpty(4, "T"), dX, 1)
 
 	// Цвет фона (base) будет последним в массиве Colors
 	cube.Colors[Base] = stringToRuneGrid(getColorOrEmpty(5, "K"), 1, 1)
@@ -120,9 +120,9 @@ func GenerateFlatCube(cube FlatCube) string {
 
 	// Генерация фронтальной стороны
 	builder.WriteString("\r\n\t<g id=\"front\">")
-	for x := 0; x < len(cube.Colors[Front]); x++ {
-		for y := 0; y < len(cube.Colors[Front][x]); y++ {
-			color := cube.Colors[Front][x][y]
+	for y := 0; y < len(cube.Colors[Front]); y++ {
+		for x := 0; x < len(cube.Colors[Front][y]); x++ {
+			color := cube.Colors[Front][y][x]
 
 			startX := 10 + x*49
 			startY := 10 + y*49
@@ -155,9 +155,9 @@ func GenerateFlatSide(cube FlatCube, side Side) string {
 
 	// Начало группы
 	builder.WriteString(fmt.Sprintf("\r\n\t<g id=\"%s\">", side.String()))
-	for x := 0; x < len(cube.Colors[side]); x++ {
-		for y := 0; y < len(cube.Colors[side][x]); y++ {
-			colorRune := cube.Colors[side][x][y]
+	for y := 0; y < len(cube.Colors[side]); y++ {
+		for x := 0; x < len(cube.Colors[side][y]); x++ {
+			colorRune := cube.Colors[side][y][x]
 
 			startX := int(sideParam.Base.X) + x*49
 			startY := int(sideParam.Base.Y) + y*49
