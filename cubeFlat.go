@@ -13,14 +13,14 @@ const (
 	Front Side = iota
 	Left
 	Right
-	Top
+	Up
 	Down
 	Back
 	Base
 )
 
 func (s Side) String() string {
-	return [...]string{"front", "left", "right", "top", "down", "back", "base"}[s]
+	return [...]string{"front", "left", "right", "up", "down", "back", "base"}[s]
 }
 
 type FlatCube struct {
@@ -71,7 +71,7 @@ func ParseFlatParams(pDimensions, pColors string) (FlatCube, error) {
 	// Парсинг цветов для каждой стороны
 	cube.Colors[Front] = stringToRuneGrid(getColorOrEmpty(0, "X"), dX, dY)
 	cube.Colors[Left] = stringToRuneGrid(getColorOrEmpty(1, "T"), 1, dY)
-	cube.Colors[Top] = stringToRuneGrid(getColorOrEmpty(2, "T"), dX, 1)
+	cube.Colors[Up] = stringToRuneGrid(getColorOrEmpty(2, "T"), dX, 1)
 	cube.Colors[Right] = stringToRuneGrid(getColorOrEmpty(3, "T"), 1, dY)
 	cube.Colors[Down] = stringToRuneGrid(getColorOrEmpty(4, "T"), dX, 1)
 
@@ -100,7 +100,7 @@ func GenerateFlatCube(cube FlatCube) string {
 			Base: Point{X: 10, Y: 0},
 			Size: Point{X: 43, Y: 6},
 		},
-		Top: {
+		Up: {
 			Base: Point{X: 10, Y: 0},
 			Size: Point{X: 43, Y: 6},
 		},
@@ -136,11 +136,10 @@ func GenerateFlatCube(cube FlatCube) string {
 	builder.WriteString("\r\n\t</g>")
 
 	// Генерация остальных сторон
-	builder.WriteString(GenerateFlatSide(cube, Left))
-	builder.WriteString(GenerateFlatSide(cube, Top))
-	builder.WriteString(GenerateFlatSide(cube, Right))
-	builder.WriteString(GenerateFlatSide(cube, Down))
-
+	GenerateFlatSide(&builder, cube, Left)
+	GenerateFlatSide(&builder, cube, Up)
+	GenerateFlatSide(&builder, cube, Right)
+	GenerateFlatSide(&builder, cube, Down)
 	// Закрытие SVG
 	builder.WriteString("\r\n</svg>")
 
@@ -149,8 +148,7 @@ func GenerateFlatCube(cube FlatCube) string {
 }
 
 // GenerateFlatSide генерирует сторону кубика
-func GenerateFlatSide(cube FlatCube, side Side) string {
-	var builder strings.Builder
+func GenerateFlatSide(builder *strings.Builder, cube FlatCube, side Side) {
 	sideParam := cube.SideParams[side]
 
 	// Начало группы
@@ -175,6 +173,4 @@ func GenerateFlatSide(cube FlatCube, side Side) string {
 	}
 	// Закрытие группы
 	builder.WriteString("\r\n\t</g>")
-
-	return builder.String()
 }

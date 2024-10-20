@@ -56,8 +56,8 @@ func ParseIsometricParams(pDimensions, pColors string) (IsometricCube, error) {
 	}
 
 	// Парсинг цветов для каждой стороны
-	cube.Colors[Left] = stringToRuneGrid(getColorOrEmpty(0, "X"), dX, dY)
-	cube.Colors[Top] = stringToRuneGrid(getColorOrEmpty(1, "X"), dZ, dX)
+	cube.Colors[Front] = stringToRuneGrid(getColorOrEmpty(0, "X"), dX, dY)
+	cube.Colors[Up] = stringToRuneGrid(getColorOrEmpty(1, "X"), dZ, dX)
 	cube.Colors[Right] = stringToRuneGrid(getColorOrEmpty(2, "X"), dZ, dY)
 
 	// Цвет фона (base) будет последним в массиве Colors
@@ -91,13 +91,13 @@ func GenerateIsometricCube(cube IsometricCube) string {
 
 	// Считаем положение элементов на сторонах (side) кубика с размерами XxYxZ
 	cube.SideParams = map[Side]IsometricSideParameter{
-		Left: {
+		Front: {
 			Base:   Point{X: 41.2, Y: 31.48 + 24.5*dZ},
 			Multi:  Point{X: 0, Y: 24.5},
 			Offset: Point{X: 42.43, Y: 49},
 			Drawn:  "v29.69c0,3.67-2.25,5.37-5,3.78l-27.23-15.72c-2.75-1.59-5-5.9-5-9.56v-29.69c0-3.67 2.25-5.37 5-3.78l27.23 15.72c2.75 1.6 5.01 5.9 5.01 9.57z",
 		},
-		Top: {
+		Up: {
 			Base:   Point{X: 48.83, Y: 17.92 + 24.5*dZ},
 			Multi:  Point{X: 42.47, Y: -24.5},
 			Offset: Point{X: 42.43, Y: 24.5},
@@ -123,9 +123,9 @@ func GenerateIsometricCube(cube IsometricCube) string {
 		M.X, M.Y, LY.Y, LX.X, LX.Y, LZ.X, LZ.Y, -LY.Y, -LX.X, -LX.Y, -LZ.X, -LZ.Y, colorMapRGBA[colorBase]))
 
 	// Создаём стороны (side)
-	builder.WriteString(GenerateIsometricSide(cube, Left))
-	builder.WriteString(GenerateIsometricSide(cube, Top))
-	builder.WriteString(GenerateIsometricSide(cube, Right))
+	GenerateIsometricSide(&builder, cube, Front)
+	GenerateIsometricSide(&builder, cube, Up)
+	GenerateIsometricSide(&builder, cube, Right)
 
 	// Закрываем рамку (viewBox)
 	builder.WriteString("\r\n</svg>")
@@ -134,8 +134,7 @@ func GenerateIsometricCube(cube IsometricCube) string {
 	return builder.String()
 }
 
-func GenerateIsometricSide(cube IsometricCube, side Side) string {
-	var builder strings.Builder
+func GenerateIsometricSide(builder *strings.Builder, cube IsometricCube, side Side) {
 	sideParam := cube.SideParams[side]
 
 	// Начало группы
@@ -153,6 +152,4 @@ func GenerateIsometricSide(cube IsometricCube, side Side) string {
 	}
 	// Закрытие группы
 	builder.WriteString("\r\n\t</g>")
-
-	return builder.String()
 }
