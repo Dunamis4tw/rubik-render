@@ -113,6 +113,7 @@ func GenerateFlatCube(cube FlatCube) string {
 		14+cube.Size.X*49, 14+cube.Size.Y*49)
 	builder.WriteString(mianSVG)
 
+	// Генерируем фон
 	colorBase := cube.Colors[Base][0][0]
 	baseRect := fmt.Sprintf("<rect id=\"base\" width=\"%d\" height=\"%d\" rx=\"7.42\" style=\"fill: %s\" x=\"3\" y=\"3\"/>",
 		8+cube.Size.X*49, 8+cube.Size.Y*49, colorMapRGBA[colorBase])
@@ -128,7 +129,7 @@ func GenerateFlatCube(cube FlatCube) string {
 			startY := 10 + y*49
 
 			path := fmt.Sprintf("\r\n\t\t<rect id=\"%s-%dx%d\" x=\"%d\" y=\"%d\" width=\"43\" height=\"43\" rx=\"6.21\" style=\"fill: %s\"/>",
-				"front", x+1, y+1, startX, startY, colorMapRGBA[color])
+				"f", x+1, y+1, startX, startY, colorMapRGBA[color])
 			builder.WriteString(path)
 		}
 	}
@@ -166,8 +167,8 @@ func GenerateFlatSide(builder *strings.Builder, cube FlatCube, side Side) {
 				startY += 8 + cube.Size.Y*49
 			}
 
-			rect := fmt.Sprintf("\r\n\t\t<rect id=\"%s-%dx%d\" x=\"%d\" y=\"%d\" width=\"%d\" height=\"%d\" rx=\"2.32\" style=\"fill: %s\"/>",
-				side.String(), x+1, y+1, startX, startY, int(sideParam.Size.X), int(sideParam.Size.Y), colorMapRGBA[colorRune])
+			rect := fmt.Sprintf("\r\n\t\t<rect id=\"%c-%dx%d\" x=\"%d\" y=\"%d\" width=\"%d\" height=\"%d\" rx=\"2.32\" style=\"fill: %s\"/>",
+				side.String()[0], x+1, y+1, startX, startY, int(sideParam.Size.X), int(sideParam.Size.Y), colorMapRGBA[colorRune])
 			builder.WriteString(rect)
 		}
 	}
