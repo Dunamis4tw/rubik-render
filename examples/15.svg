@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599 353">
+	<path id="base" d="M7.42 99.00h84.16s7.42 0 7.42 -7.42v-84.16s0 -7.42 7.42 -7.42h189.16s7.42 0 7.42 7.42v84.16s0 7.42 7.42 7.42h281.16s7.42 0 7.42 7.42v140.16s 0 7.42 -7.42 7.42h-281.16s-7.42 0 -7.42 7.42v84.16s0 7.42 -7.42 7.42h-189.16s-7.42 0 -7.42 -7.42v-84.16s0 -7.42 -7.42 -7.42h-84.16s-7.42 0 -7.42 -7.42v-140.16s0 -7.42 7.42 -7.42" style="fill: #000000"/>
+	<g id="front">
+		<rect id="f-1x1" x="106" y="106" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-2x1" x="155" y="106" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-3x1" x="204" y="106" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-4x1" x="253" y="106" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-1x2" x="106" y="155" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-2x2" x="155" y="155" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-3x2" x="204" y="155" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-4x2" x="253" y="155" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-1x3" x="106" y="204" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-2x3" x="155" y="204" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-3x3" x="204" y="204" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+		<rect id="f-4x3" x="253" y="204" width="43" height="43" rx="6.21" style="fill: #d50000"/>
+	</g>
+	<g id="left">
+		<rect id="l-1x1" x="7" y="106" width="43" height="43" rx="6.21" style="fill: #009900"/>
+		<rect id="l-2x1" x="56" y="106" width="43" height="43" rx="6.21" style="fill: #009900"/>
+		<rect id="l-1x2" x="7" y="155" width="43" height="43" rx="6.21" style="fill: #009900"/>
+		<rect id="l-2x2" x="56" y="155" width="43" height="43" rx="6.21" style="fill: #009900"/>
+		<rect id="l-1x3" x="7" y="204" width="43" height="43" rx="6.21" style="fill: #009900"/>
+		<rect id="l-2x3" x="56" y="204" width="43" height="43" rx="6.21" style="fill: #009900"/>
+	</g>
+	<g id="up">
+		<rect id="u-1x1" x="106" y="7" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-2x1" x="155" y="7" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-3x1" x="204" y="7" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-4x1" x="253" y="7" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-1x2" x="106" y="56" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-2x2" x="155" y="56" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-3x2" x="204" y="56" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+		<rect id="u-4x2" x="253" y="56" width="43" height="43" rx="6.21" style="fill: #dfdfdf"/>
+	</g>
+	<g id="right">
+		<rect id="r-1x1" x="303" y="106" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="r-2x1" x="352" y="106" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="r-1x2" x="303" y="155" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="r-2x2" x="352" y="155" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="r-1x3" x="303" y="204" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+		<rect id="r-2x3" x="352" y="204" width="43" height="43" rx="6.21" style="fill: #3434d4"/>
+	</g>
+	<g id="down">
+		<rect id="d-1x1" x="106" y="254" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-2x1" x="155" y="254" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-3x1" x="204" y="254" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-4x1" x="253" y="254" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-1x2" x="106" y="303" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-2x2" x="155" y="303" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-3x2" x="204" y="303" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+		<rect id="d-4x2" x="253" y="303" width="43" height="43" rx="6.21" style="fill: #ffff00"/>
+	</g>
+	<g id="back">
+		<rect id="b-1x1" x="402" y="106" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-2x1" x="451" y="106" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-3x1" x="500" y="106" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-4x1" x="549" y="106" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-1x2" x="402" y="155" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-2x2" x="451" y="155" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-3x2" x="500" y="155" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-4x2" x="549" y="155" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-1x3" x="402" y="204" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-2x3" x="451" y="204" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-3x3" x="500" y="204" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+		<rect id="b-4x3" x="549" y="204" width="43" height="43" rx="6.21" style="fill: #ef6c00"/>
+	</g>
+</svg>

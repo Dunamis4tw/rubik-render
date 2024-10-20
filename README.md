@@ -9,7 +9,7 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
 - **Multiple views**: Generate the Rubik's cube in different views, including:
   - `isometric`: 3D isometric view.
   - `flat`: Top-down or side view.
-  - `unfolded` (coming soon): Flat layout showing all sides of the cube.
+  - `unfolded`: Flat layout showing all sides of the cube.
 
 - **Customizable size**: Create cubes and cuboids with dimensions ranging from 1x1x1 to 64x64x64.
 
@@ -21,14 +21,15 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
 
 `GET` **`/cube/{view}/{size}/{colors}`**
 
-- `view`: The display view for the cube. Options: `isometric`, `flat`, `unfolded` (coming soon).
+- `view`: The display view for the cube. Options: `isometric`, `flat`, `unfolded`.
 - `size`:
-  - For `isometric`: Cube or cuboid dimensions in the format `{x}x{y}x{z}`.
+  - For `isometric`,`unfolded`: Cube or cuboid dimensions in the format `{x}x{y}x{z}`.
   - For `flat`: Dimensions should be provided in the format `{x}x{y}`, as it only represents the top and adjacent sides of the cube.
 
 - `colors`:
-  - For `isometric`: Colors should be provided in the format `{left}-{top}-{right}-{base}`.
-  - For `flat`: Colors should be provided in the format `{front}-{left}-{top}-{right}-{down}-{base}`.
+  - For `isometric`: Colors should be provided in the format `{left}-{up}-{right}-{base}`.
+  - For `flat`: Colors should be provided in the format `{front}-{left}-{up}-{right}-{down}-{base}`.
+  - For `unfolded`: Colors should be provided in the format `{front}-{left}-{up}-{right}-{down}-{back}-{base}`.
 
 ### Example Requests (Isometric)
 
@@ -111,6 +112,20 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
   `GET` **`http://localhost/v1/cube/flat/2x2/XYXX-YX-XX-XY-YX-T`**
 
   <details><summary>Click to view the SVG image</summary><p align="center"><img src="./examples/12.svg" width="512" height="512" /></p></details>
+
+### Example Requests (Unfolded)
+
+- **Unfolded view of a 3x3x3 solved cube with red, green, white, blue, yellow, and orange sides**:
+
+  `GET` **`http://localhost/v1/cube/unfolded/3x3x3/R-G-W-B-Y-O`**
+
+  <details><summary>Click to view the SVG image</summary><p align="center"><img src="./examples/14.svg" height="512" /></p></details>
+
+- **Unfolded view of a 4x3x2 cuboid with red, green, white, blue, yellow, and orange sides**:
+
+  `GET` **`http://localhost/v1/cube/unfolded/4x3x2/R-G-W-B-Y-O`**
+
+  <details><summary>Click to view the SVG image</summary><p align="center"><img src="./examples/15.svg" height="512" /></p></details>
 
 ### Color Notation
 

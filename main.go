@@ -118,6 +118,20 @@ func CubeHandler(c *gin.Context) {
 		c.Header("Content-Type", "image/svg+xml")
 		c.String(http.StatusOK, svg)
 		return
+	case "unfolded":
+		// Парсим параметры
+		unfoldedCube, err := ParseUnfoldedParams(pDimensions, pColors)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+			return
+		}
+		// Генерация SVG
+		svg := GenerateUnfoldedCube(unfoldedCube)
+
+		// Установка заголовков и вывод SVG
+		c.Header("Content-Type", "image/svg+xml")
+		c.String(http.StatusOK, svg)
+		return
 	default:
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Unknown view parameter"})
 	}
