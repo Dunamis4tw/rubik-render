@@ -63,7 +63,7 @@ func main() {
 			log.Fatalf("Error starting HTTPS server: %v", err)
 		}
 	} else {
-		log.Printf("Open https://%s:%s in your browser", opts.IP, opts.Port)
+		log.Printf("Open http://%s:%s in your browser", opts.IP, opts.Port)
 		// Запуск HTTP сервера
 		err := router.Run(address)
 		if err != nil {
