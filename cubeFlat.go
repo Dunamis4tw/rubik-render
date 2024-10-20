@@ -26,10 +26,10 @@ func (s Side) String() string {
 type FlatCube struct {
 	Size       Size                    // Размер Кубика Рубика XYZ
 	Colors     map[Side][][]rune       // Карта для хранения цветов каждой стороны
-	SideParams map[Side]FlatFaceConfig // Параметры боковой стороны кубика
+	SideParams map[Side]FlatSideConfig // Параметры боковой стороны кубика
 }
 
-type FlatFaceConfig struct {
+type FlatSideConfig struct {
 	Base  Point // Базовая точка
 	Size  Point // Размер объекта
 	Multi Point // X отвечает за горизонтальный шаг, Y — за вертикальный (0 по оси Y)
@@ -87,7 +87,7 @@ func GenerateFlatCube(cube FlatCube) string {
 
 	// // // // // ПРОИЗВОДИМ РАСЧЁТЫ
 
-	cube.SideParams = map[Side]FlatFaceConfig{
+	cube.SideParams = map[Side]FlatSideConfig{
 		Left: {
 			Base: Point{X: 0, Y: 10},
 			Size: Point{X: 6, Y: 43},
