@@ -20,11 +20,11 @@ type Point struct {
 
 // Определяем структуру для параметров командной строки
 type Options struct {
-	IP       string `short:"i" long:"ip" description:"IP адрес для прослушивания" default:"0.0.0.0"`
-	Port     string `short:"p" long:"port" description:"Порт для запуска сервера" default:"80"`
-	CertFile string `short:"c" long:"cert" description:"Путь к SSL сертификату"`
-	KeyFile  string `short:"k" long:"key" description:"Путь к SSL ключу"`
-	Help     bool   `short:"h" long:"help" description:"Вывести информацию о параметрах"`
+	IP       string `short:"i" long:"ip" description:"IP address to listen on" default:"0.0.0.0"`
+	Port     string `short:"p" long:"port" description:"Port to start the server" default:"80"`
+	CertFile string `short:"c" long:"cert" description:"Path to SSL certificate"`
+	KeyFile  string `short:"k" long:"key" description:"Path to SSL key"`
+	Help     bool   `short:"h" long:"help" description:"Display help information"`
 }
 
 func main() {
@@ -52,33 +52,34 @@ func main() {
 	address := fmt.Sprintf("%s:%s", opts.IP, opts.Port)
 
 	// Сообщение в консоль
-	log.Printf("Сервер запущен на %s:%s", opts.IP, opts.Port)
-	log.Printf("Откройте http://%s:%s в браузере", opts.IP, opts.Port)
+	log.Printf("Listening on %s:%s", opts.IP, opts.Port)
 
 	// Проверяем, указаны ли сертификаты для SSL
 	if opts.CertFile != "" && opts.KeyFile != "" {
+		log.Printf("Open https://%s:%s in your browser", opts.IP, opts.Port)
 		// Запуск HTTPS сервера с сертификатами
 		err := router.RunTLS(address, opts.CertFile, opts.KeyFile)
 		if err != nil {
-			log.Fatalf("Ошибка при запуске HTTPS сервера: %v", err)
+			log.Fatalf("Error starting HTTPS server: %v", err)
 		}
 	} else {
+		log.Printf("Open https://%s:%s in your browser", opts.IP, opts.Port)
 		// Запуск HTTP сервера
 		err := router.Run(address)
 		if err != nil {
-			log.Fatalf("Ошибка при запуске HTTP сервера: %v", err)
+			log.Fatalf("Error starting HTTP server: %v", err)
 		}
 	}
 }
 
 // PrintHelp выводит информацию о параметрах программы
 func PrintHelp() {
-	fmt.Println("Использование программы:")
-	fmt.Println("  -i, --ip       IP адрес для прослушивания (по умолчанию 0.0.0.0)")
-	fmt.Println("  -p, --port     Порт для запуска сервера (по умолчанию 80)")
-	fmt.Println("  -c, --cert     Путь к SSL сертификату")
-	fmt.Println("  -k, --key      Путь к SSL ключу")
-	fmt.Println("  -h, --help     Вывести эту справку")
+	fmt.Println("Program usage:")
+	fmt.Println("  -i, --ip       IP address to listen on (default 0.0.0.0)")
+	fmt.Println("  -p, --port     Port to start the server (default 80)")
+	fmt.Println("  -c, --cert     Path to SSL certificate")
+	fmt.Println("  -k, --key      Path to SSL key")
+	fmt.Println("  -h, --help     Display this help")
 }
 
 // CubeHandler обрабатывает запросы для генерации SVG кубика Рубика
