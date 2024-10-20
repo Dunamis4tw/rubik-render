@@ -43,7 +43,10 @@ func main() {
 
 	router := gin.Default()
 
-	router.GET("/cube/:view/:dimensions/:colors", CubeHandler)
+	v1 := router.Group("/v1")
+	{
+		v1.GET("/cube/:view/:dimensions/:colors", CubeHandler)
+	}
 
 	// Формирование адреса для прослушивания
 	address := fmt.Sprintf("%s:%s", opts.IP, opts.Port)
