@@ -25,7 +25,7 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
 
 `GET` **`v1/{puzzle}/{view}/{size}/{colors}`**
 
-- `puzzle`: Specifies the type of puzzle. Options: `cube`, `skewb` (coming soon), `pyramid` (coming soon).
+- `puzzle`: Specifies the type of puzzle. Options: `cube`, `skewb`, `pyramid` (coming soon).
 - `view`: The display view for the cube. Options: `isometric`, `flat`, `unfolded`.
 - `size`:
   - For `isometric`,`unfolded`: Cube or cuboid dimensions in the format `{x}x{y}x{z}`.
@@ -91,6 +91,13 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
   `GET` **`https://rubik-render.leoganpro.net/v1/cube/isometric/1x1x1/R-W-B`**
 
   <details><summary>Click to view the SVG image</summary><p align="center"><img src="./examples/13.svg" width="128" height="128" /></p></details>
+
+- **Isometric view of a Skewb with red, white, and blue sides**:
+
+  `GET` **`https://rubik-render.leoganpro.net/v1/skewb/isometric/1/R-W-B`**
+
+  <details><summary>Click to view the SVG image</summary><p align="center"><img src="./examples/16.svg" width="512" height="512" /></p></details>
+
 
 ### Example Requests (Flat)
 
@@ -159,8 +166,8 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
 
 - [ ] Add the following puzzles:
   - [x] Cube (Cuboid)
-  - [ ] Skewb
-  - [ ] Pyramid
+  - [x] Skewb
+  - [ ] Pyraminx
   - [ ] Megaminx (Kilo-, Mega-, Giga-, Teraminx)
   - [ ] Square-1
 - [ ] Implement the following color options:

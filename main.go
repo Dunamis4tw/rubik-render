@@ -46,6 +46,7 @@ func main() {
 	v1 := router.Group("/v1")
 	{
 		v1.GET("/cube/:view/:dimensions/:colors", CubeHandler)
+		v1.GET("/skewb/:view/:dimensions/:colors", SkewbHandler)
 	}
 
 	// Формирование адреса для прослушивания
@@ -127,6 +128,33 @@ func CubeHandler(c *gin.Context) {
 		}
 		// Генерация SVG
 		svg := GenerateUnfoldedCube(unfoldedCube)
+
+		// Установка заголовков и вывод SVG
+		c.Header("Content-Type", "image/svg+xml")
+		c.String(http.StatusOK, svg)
+		return
+	default:
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Unknown view parameter"})
+	}
+}
+
+// SkewbHandler обрабатывает запросы для генерации SVG Скьюба
+func SkewbHandler(c *gin.Context) {
+	// Получение параметров из URL
+	pDimensions := c.Param("dimensions")
+	pView := c.Param("view")
+	pColors := c.Param("colors")
+
+	switch pView {
+	case "isometric":
+		// Парсим параметры
+		isometricCube, err := ParseIsometricSkewbParams(pDimensions, pColors)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+			return
+		}
+		// Генерация SVG
+		svg := GenerateIsometricSkewb(isometricCube)
 
 		// Установка заголовков и вывод SVG
 		c.Header("Content-Type", "image/svg+xml")
