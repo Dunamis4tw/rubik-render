@@ -6,7 +6,8 @@ Rubik-Render is a Go-based API service that generates SVG images of Rubik's cube
 --><img src="./examples/7.svg" height="128" />&nbsp;&nbsp;&nbsp;&nbsp;<!--
 --><img src="./examples/8.svg" height="128" />&nbsp;&nbsp;&nbsp;&nbsp;<!--
 --><img src="./examples/2.svg" height="128" />&nbsp;&nbsp;&nbsp;&nbsp;<!--
---><img src="./examples/14.svg"  height="128" /></p>
+--><img src="./examples/14.svg"  height="128" />&nbsp;&nbsp;&nbsp;&nbsp;<!--
+--><img src="./examples/16.svg"  height="128" /></p>
 
 ## Features
 
